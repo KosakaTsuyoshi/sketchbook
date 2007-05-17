@@ -59,7 +59,7 @@ package sketchbook.net
 			target = urlLoader
 		}
 		
-		public function set target():void
+		public function set target(urlLoader:URLLoader):void
 		{
 			if(urlLoader==_target) return
 			if(_target!=null){
@@ -81,7 +81,7 @@ package sketchbook.net
 			}	
 		}
 		
-		public function get target():void
+		public function get target():URLLoader
 		{
 			return _target
 		}
@@ -141,7 +141,7 @@ package sketchbook.net
 		private function _complete(e:Event):void
 		{
 			if(onComplete!=null)
-				onComplete(data)
+				onComplete(_target.data)
 		}
 		
 		private function _httpStatus(e:HTTPStatusEvent):void
