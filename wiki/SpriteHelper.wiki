@@ -9,8 +9,24 @@ SpriteHelperはsketchbookの中核をなすクラスです。
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+{{{
+var sp:Sprite = new Sprite();
+var helper = new SpriteHelper(sp);
+}}}
+
+あるいはSpriteのサブクラスのコンストラクタ内で定義します。
+
+この方法は外部のフレームワークや既に採用している、SpriteのサブクラスでSpriteHelperを使う場合に有効です。
+
+{{{
+public class SpriteExt extends Sprite
+{
+  public var helper:SpriteHelper
+
+  public function SpriteExt()
+  {
+    helper = new SpriteHelper(this)
+  }
+}
+}}}
 
