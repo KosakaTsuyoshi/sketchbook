@@ -60,7 +60,7 @@ function onKeyDown( keyCode:Number ):void{
 }}}
 
 
-== 座標管理関数 ==
+= 座標管理関数 =
 
 SpriteHelperは、Spriteの座標をローカル、グローバル座標系に変換する関数を提供します。
 
@@ -70,4 +70,35 @@ SpriteHelperは、Spriteの座標をローカル、グローバル座標系に�
 
 また、SpriteHelper.localToLocalという、あるローカル系座標を別のローカル系座標に変換する関数も存在します。
 
+
+= プロパティへのショートカット =
+
+SpriteHelperは関連づけられたSpriteのプロパティへのショートカットを持ちます。
+頻繁に使用されるプロパティのほぼ全てには、SpriteHelperから直接アクセスすることができます。
+
+ * x, y, width, height, alpha...等のSpriteの基本プロパティ
+ * matrixおよび、translate, rotate等のtransform.matrix以下へのショートカット
+ * graphicsおよび、beginFill等のSprite.graphics以下へのショートカット
+ * colorTransformおよび、redOffset等のSprite.transform.colorTransform以下へのショートカット
+
+{{{
+var sp:Spriten = new Sprite();
+var helper:SpriteHelper = new SpriteHelper(sp);
+
+//プロパティショートカット
+helper.x = 100;
+helper.y = 100;
+
+//描画ショートカット
+helper.beginFill(0x000000,1);
+helper.drawRect(0,0,100,100);
+helper.endFill();
+
+//Matrixショートカット
+helper.translate(100,100);
+
+//ColorTransformショートカット
+helper.redOffset = 50;
+helepr.blueMultiply = 1.5;
+}}}
 
