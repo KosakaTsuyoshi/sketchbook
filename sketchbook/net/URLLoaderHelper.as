@@ -26,7 +26,7 @@ package sketchbook.net
 	 * 
 	 * @see flash.net.URLLoader
 	 *  * */
-	public class URLLoaderSB
+	public class URLLoaderHelper
 	{
 		/** Event.COMPLETEのコールバックハンドラ。 引数としてdata:Objectが渡されます。 */
 		public var onComplete:Function 
@@ -54,7 +54,7 @@ package sketchbook.net
 		
 		private var _target:URLLoader
 		
-		public function URLLoaderSB(urlLoader:URLLoader)
+		public function URLLoaderHelper(urlLoader:URLLoader)
 		{
 			target = urlLoader
 		}
