@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>All Classes</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'All Classes - Sketchbook API Documentation';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sketchbook</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('index-list.html')" href="all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="index.html?class-summary.html&amp;all-classes.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">All&nbsp;Classes</td><td align="right" id="subNav" class="titleTableSubNav"></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("All Classes"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<br>
+<p>Documentation for classes includes syntax, usage information, and code samples for methods, properties, and event handlers and listeners for those APIs that belong to a specific class in ActionScript. The classes are listed alphabetically. If you are not sure to which class a certain method or property belongs, you can look it up in the Index.</p>
+<br>
+<table class="summaryTable" cellspacing="0" cellpadding="3">
+<tr>
+<th>&nbsp;</th><th width="20%">Class</th><th width="20%">Package</th><th width="60%">Description</th>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/display/BitmapDataHelper.html">BitmapDataHelper</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/display/class-list.html');" href="sketchbook/display/package-detail.html">sketchbook.display</a></td><td class="summaryTableLastCol">&nbsp;</td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/graphics/BitmapFill.html">BitmapFill</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/graphics/class-list.html');" href="sketchbook/graphics/package-detail.html">sketchbook.graphics</a></td><td class="summaryTableLastCol">
+ Graphics.beginBitmapFillをクラス化したもの
+ <p>applySettingでGraphicsインスタンスに設定を注入する。</p>
+ </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/data/C.html">C</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/data/class-list.html');" href="sketchbook/data/package-detail.html">sketchbook.data</a></td><td class="summaryTableLastCol">
+  Cは、定数へのショートカットクラスです。
+  <p>定数インポート回避用ですが、役にたたなさそうなら破棄します</p>
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/colors/ColorSB.html">ColorSB</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/colors/class-list.html');" href="sketchbook/colors/package-detail.html">sketchbook.colors</a></td><td class="summaryTableLastCol">
+  色情報を表現したクラスです。
+  <p>Colorクラスは、RGB,HSBによる色の操作を提供します。<br/>
+  このクラスはアルファチャンネルをサポートしません。</p>
+  <p>ColorクラスはvalueOfを実装している為インスタンスをuint型に変換することで、色への代入値として使用することができます。</p>
+  <p>Colorクラスの内部処理はColorUtilクラスに委譲されています。<br/>
+  Colorクラスを用いずに色の操作をう場合、ColorUtilクラスで同様の操作を行うこともできます。</p>
+  
+  <p>TODO: 色の各要素は遅延評価なのでR,G,B,H,S,Bに対してデータのバインディングができない。速度優先にしてバインディング自体を諦めるか？</p>
+  <p>ColorUtilを使うと、brightnessを０とかにすると、必然的にhueやsaturationも０になる。本来のh,sを保存すべきか？</p>
+  
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/colors/ColorUtil.html">ColorUtil</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/colors/class-list.html');" href="sketchbook/colors/package-detail.html">sketchbook.colors</a></td><td class="summaryTableLastCol">
+  色操作を支援するクラスです。
+  <p>ColorUtilを用いることで、RGB,HSB,HLS間の色の変換等を行うことができます。</p>
+  <p>AS2との互換性保持の為、このクラスは色情報のやり取りに無名オブジェクト<code>{r:uint, g:uint, b:uint}</code>を用いています。</p>
+  <p>AS3で色を操作する場合には、Colorクラスの使用を推奨します。</p>
+  
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/CompositeGenerator.html">CompositeGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  複数の波形を合成した波を返すGenerator
+  <p>複数のGeneratorを配列形式で渡し、その合成値を返すGeneratorになります。</p>
+  <p>クローンや更新の方法を色々考えること！</p>
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/Cutoff.html">Cutoff</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  子Generatorの値を指定した上限下限で切り捨てるFilter系Generatorです。
+  
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/data/DataInjector.html">DataInjector</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/data/class-list.html');" href="sketchbook/data/package-detail.html">sketchbook.data</a></td><td class="summaryTableLastCol">
+  DataInjectorはオブジェクトに、複数のプロパティを注入するクラスです。
+  <p>XMLによって注入するプロパティのグループを定義することで、
+  コード内の全てのパブリックな、String, Number, Boolean肩の変数を外出しすることができます。</p>
+  <p>将来的にはObjectやArray、Date型、クラス参照等も注入可能にする予定</p>
+  
+  <objects>
+   <object name="idname">
+     <property name="val1">1e</property>
+     <property name="val2">test</property>
+   <object>
+  <objects>
+  nameをidとします。
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/display/DynamicSprite.html">DynamicSprite</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/display/class-list.html');" href="sketchbook/display/package-detail.html">sketchbook.display</a></td><td class="summaryTableLastCol">&nbsp;</td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/graphics/Fill.html">Fill</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/graphics/class-list.html');" href="sketchbook/graphics/package-detail.html">sketchbook.graphics</a></td><td class="summaryTableLastCol">
+  Graphics.beginFillをクラス化したものです。
+  
+  <p>Fillの設定をクラス化することで、複数のDisplayObjectで塗り情報を共有化することができます。</p>
+  
+     </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/Generator.html">Generator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  Generatorのアブストラクトなベースクラス
+  
+  <p>このクラスはGeneratorの基底クラスとして用いられ、実際に作成されることはありません。</p>
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/GeneratorBinder.html">GeneratorBinder</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  Generatorの値をターゲットのプロパティに注入するクラス
+   
+  <p>以下のサンプルは、Spriteのx,y座標と2つのSineGeneratorの値をバインドします。</p>
+  
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/data/GlobalVariables.html">GlobalVariables</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/data/class-list.html');" href="sketchbook/data/package-detail.html">sketchbook.data</a></td><td class="summaryTableLastCol">
+  as2における _global を表現したシングルトンクラス
+  
+  setData, getDataでデータにアクセスできる 
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/graphics/GradientFill.html">GradientFill</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/graphics/class-list.html');" href="sketchbook/graphics/package-detail.html">sketchbook.graphics</a></td><td class="summaryTableLastCol">&nbsp;</td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/graphics/GraphicsHelper.html">GraphicsHelper</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/graphics/class-list.html');" href="sketchbook/graphics/package-detail.html">sketchbook.graphics</a></td><td class="summaryTableLastCol">
+  Graphicsクラスを操作する為のヘルパーオブジェクトです。
+  <p>基本的な多角形や、ポリライン描画などをサポートします</p>
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/IGenerator.html"><i>IGenerator</i></a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  変化する値を生成するGeneratorクラスのインターフェースを提供します。
+  <p>全てのGeneratorはこのインタフェースを実装する必要があります。</p>
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/graphics/LineStyle.html">LineStyle</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/graphics/class-list.html');" href="sketchbook/graphics/package-detail.html">sketchbook.graphics</a></td><td class="summaryTableLastCol">
+  Graphics.setLineStyleをクラス化したもの
+  applySettingでGraphicsインスタンスに設定を注入する。
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/net/LoaderSB.html">LoaderSB</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/net/class-list.html');" href="sketchbook/net/package-detail.html">sketchbook.net</a></td><td class="summaryTableLastCol">
+  MovieClipや画像の読み込みを簡略化する為の関数を追加したLoaderクラス
+  
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/NormDistGenerator.html">NormDistGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  正規分布(二項分布による近似)を生成するGeneratorサブクラスです。
+  NormDistGeneratorの生み出す値は、
+  offset + (-1 ～ 1 ) amplitude
+  となります。
+ </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/colors/Palette.html">Palette</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/colors/class-list.html');" href="sketchbook/colors/package-detail.html">sketchbook.colors</a></td><td class="summaryTableLastCol">
+  Colorオブジェクトを配列として管理するクラス
+  
+  <p>24ビット数値の配列、Colorオブジェクトの配列、Bitmap, BitmapDataから一連のカラーオブジェクトを生成できる</p>
+  <p>TODO: 明度順、彩度順、色相順、特定の色との近似色準といった具合にソート可能にすること！！
+  
+  <p>TODO Flex2フレームワークと融合してArrayCollectionのサブクラスにすべきか？その場合CS3では使えるのか？</p>
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/RandomGenerator.html">RandomGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  指定範囲乱数を出力するジェネレーター
+  <p>TODO: 将来的にメルセンヌツイスターを実装し、再現可能乱数にすること</p>
+  <p>TODO: 引数をmin-maxから、-1～1の波を基準に、amplitudeとoffsetで定義するように変更すること</p>
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/RandomIntGenerator.html">RandomIntGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  指定した範囲で整数の乱数を返すGeneratorです。
+  
+  <p>TODO: 引数をmin-maxから、-1～1の波を基準に、amplitudeとoffsetで定義するように変更すること</p>
+  
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/SawToothGenerator.html">SawToothGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  ノコギリ波を生成するジェネレーター 
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/SineGenerator.html">SineGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  指定した周期でSine派を生成するGeneratorサブクラスです。
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/display/SpriteHelper.html">SpriteHelper</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/display/class-list.html');" href="sketchbook/display/package-detail.html">sketchbook.display</a></td><td class="summaryTableLastCol">
+  Sprite,MovieClipおよび、各種Helperに関する一般的な処理のショートカットを集約したヘルパークラス。
+  <br/>イベントリスナやマトリックス変換等の工数軽減用です。
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/SquareGenerator.html">SquareGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  矩形波を生成するジェネレーター
+  Sineと共有化できないか？
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/external/tweener/Transition.html">Transition</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/external/tweener/class-list.html');" href="sketchbook/external/tweener/package-detail.html">sketchbook.external.tweener</a></td><td class="summaryTableLastCol">
+  Easing Contstants for TWEENER
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/generators/TriangleGenerator.html">TriangleGenerator</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/generators/class-list.html');" href="sketchbook/generators/package-detail.html">sketchbook.generators</a></td><td class="summaryTableLastCol">
+  三角波を生成するジェネレーター
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="sketchbook/net/URLLoaderHelper.html">URLLoaderHelper</a>
+<br>
+</td><td class="summaryTableCol"><a onclick="javascript:loadClassListFrame('sketchbook/net/class-list.html');" href="sketchbook/net/package-detail.html">sketchbook.net</a></td><td class="summaryTableLastCol"> 
+  URLLoaderを簡略化したクラスです。
+  <p>URLLoaderのイベントに対するコールバックハンドラや、URLRequestを介さず直接URLをコールするメソッドを提供します。</p> 
+  <p>TODO: Flashのundocumentな使用か、onCompleteというハンドラがうまく動かない</p>
+  </td>
+</tr>
+</table>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

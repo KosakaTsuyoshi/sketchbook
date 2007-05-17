@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<title>sketchbook.generators Summary</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'sketchbook.generators Package - Sketchbook API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sketchbook</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sketchbook/generators/package-detail.html&amp;sketchbook/generators/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Package&nbsp;sketchbook.generators</td><td align="right" id="subNav" class="titleTableSubNav"><a href="package-detail.html#interfaceSummary">Interfaces</a>&nbsp;| <a href="package-detail.html#classSummary">Classes</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Package sketchbook.generators"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,true,true,false);}
+--></script>
+<div class="MainContent">
+<br>
+<br>
+<hr>
+<a name="interfaceSummary"></a>
+<div class="summaryTableTitle">Interfaces</div>
+<table class="summaryTable" cellspacing="0" cellpadding="3">
+<tr>
+<th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IGenerator.html">IGenerator</a></i></td><td class="summaryTableLastCol">
+  変化する値を生成するGeneratorクラスのインターフェースを提供します。
+  <p>全てのGeneratorはこのインタフェースを実装する必要があります。</p>
+  </td>
+</tr>
+</table>
+<a name="classSummary"></a>
+<div class="summaryTableTitle">Classes</div>
+<table class="summaryTable" cellspacing="0" cellpadding="3">
+<tr>
+<th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="CompositeGenerator.html">CompositeGenerator</a></td><td class="summaryTableLastCol">
+  複数の波形を合成した波を返すGenerator
+  <p>複数のGeneratorを配列形式で渡し、その合成値を返すGeneratorになります。</p>
+  <p>クローンや更新の方法を色々考えること！</p>
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Cutoff.html">Cutoff</a></td><td class="summaryTableLastCol">
+  子Generatorの値を指定した上限下限で切り捨てるFilter系Generatorです。
+  
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Generator.html">Generator</a></td><td class="summaryTableLastCol">
+  Generatorのアブストラクトなベースクラス
+  
+  <p>このクラスはGeneratorの基底クラスとして用いられ、実際に作成されることはありません。</p>
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GeneratorBinder.html">GeneratorBinder</a></td><td class="summaryTableLastCol">
+  Generatorの値をターゲットのプロパティに注入するクラス
+   
+  <p>以下のサンプルは、Spriteのx,y座標と2つのSineGeneratorの値をバインドします。</p>
+  
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NormDistGenerator.html">NormDistGenerator</a></td><td class="summaryTableLastCol">
+  正規分布(二項分布による近似)を生成するGeneratorサブクラスです。
+  NormDistGeneratorの生み出す値は、
+  offset + (-1 ～ 1 ) amplitude
+  となります。
+ </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RandomGenerator.html">RandomGenerator</a></td><td class="summaryTableLastCol">
+  指定範囲乱数を出力するジェネレーター
+  <p>TODO: 将来的にメルセンヌツイスターを実装し、再現可能乱数にすること</p>
+  <p>TODO: 引数をmin-maxから、-1～1の波を基準に、amplitudeとoffsetで定義するように変更すること</p>
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RandomIntGenerator.html">RandomIntGenerator</a></td><td class="summaryTableLastCol">
+  指定した範囲で整数の乱数を返すGeneratorです。
+  
+  <p>TODO: 引数をmin-maxから、-1～1の波を基準に、amplitudeとoffsetで定義するように変更すること</p>
+  
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SawToothGenerator.html">SawToothGenerator</a></td><td class="summaryTableLastCol">
+  ノコギリ波を生成するジェネレーター 
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SineGenerator.html">SineGenerator</a></td><td class="summaryTableLastCol">
+  指定した周期でSine派を生成するGeneratorサブクラスです。
+  </td>
+</tr>
+<tr class="prow0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SquareGenerator.html">SquareGenerator</a></td><td class="summaryTableLastCol">
+  矩形波を生成するジェネレーター
+  Sineと共有化できないか？
+  </td>
+</tr>
+<tr class="prow1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TriangleGenerator.html">TriangleGenerator</a></td><td class="summaryTableLastCol">
+  三角波を生成するジェネレーター
+  </td>
+</tr>
+</table>
+<p></p>
+<div>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</div>
+</body>
+</html>
+<!-- -->

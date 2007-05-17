@@ -1,0 +1,645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="ColorUtil,sketchbook.colors.ColorUtil,getHSB,getHLS,getRGB,setHSB,setHLS,setRGB,HLS2HSB,HLS2RGB,HSB2HLS,HSB2RGB,RGB2HSB,RGB2HLS" name="keywords">
+<title>sketchbook.colors.ColorUtil</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'ColorUtil - Sketchbook API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sketchbook</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sketchbook/colors/ColorUtil.html&amp;sketchbook/colors/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;ColorUtil</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class ColorUtil"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sketchbook.colors</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class ColorUtil</td>
+</tr>
+</table>
+<p></p>
+  色操作を支援するクラスです。
+  <p>ColorUtilを用いることで、RGB,HSB,HLS間の色の変換等を行うことができます。</p>
+  <p>AS2との互換性保持の為、このクラスは色情報のやり取りに無名オブジェクト<code>{r:uint, g:uint, b:uint}</code>を用いています。</p>
+  <p>AS3で色を操作する場合には、Colorクラスの使用を推奨します。</p>
+  
+  <p></p>
+<br>
+<span class="label">Example</span>
+<br><div class='listing'><pre>
+  var rgb:Object = {r:40, g:200, b:200}
+  var hsb:Object = ColorUtils.RGB2HSB(rgb)
+  trace(hsb.h,hsb.s,hsb.b)</pre></div>
+  <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">sketchbook.colors.Color</div>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#ColorUtil()">ColorUtil</a>()</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getHLS()">getHLS</a>(color:uint):Object</div>
+<div class="summaryTableDescription">[static]
+  24ビットの色を、h,l,sを格納したオブジェクトに変換します。
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getHSB()">getHSB</a>(color:uint):Object</div>
+<div class="summaryTableDescription">[static]
+  24ビットの色を、h,s,bを格納したオブジェクトに変換します。
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getRGB()">getRGB</a>(rgb:uint):Object</div>
+<div class="summaryTableDescription">[static]
+  24ビットの色を、r,g,bを格納したオブジェクトに変換します。
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#HLS2HSB()">HLS2HSB</a>(h:Number, l:Number, s:Number):Object</div>
+<div class="summaryTableDescription">[static]
+  Create {h,s,b} Object from H, L, S value.</div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#HLS2RGB()">HLS2RGB</a>(h:Number, l:Number, s:Number):Object</div>
+<div class="summaryTableDescription">[static]
+  H, L, Sの値から、{r,g,b}のオブジェクトを取得します。
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#HSB2HLS()">HSB2HLS</a>(h:Number, s:Number, b:Number):Object</div>
+<div class="summaryTableDescription">[static]
+  Converts H, S, B values to {h:Hue, l:Luminous, s:Saturation} Object
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#HSB2RGB()">HSB2RGB</a>(hue:Number, sat:Number, bri:Number):Object</div>
+<div class="summaryTableDescription">[static]
+  convert H, S, B values to {r:red, g:green, b:blue} Object
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#RGB2HLS()">RGB2HLS</a>(r:uint, g:uint, b:uint):Object</div>
+<div class="summaryTableDescription">[static]
+  convert R,G,B values to {h:Hue,l:Luminous,s:Saturation} Object
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#RGB2HSB()">RGB2HSB</a>(r:uint, g:uint, b:uint):Object</div>
+<div class="summaryTableDescription">[static]
+  convert R,G,B values to {h:huse,s:saturation,b:brightness} Object
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setHLS()">setHLS</a>(col:Object, h:Number, l:Number, s:Number):void</div>
+<div class="summaryTableDescription">[static]
+  r,g,bを格納したオブジェクトの色を、HLSで定義しなおします。
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setHSB()">setHSB</a>(col:Object, h:Number, s:Number, b:Number):void</div>
+<div class="summaryTableDescription">[static]
+  r,g,bを格納したオブジェクトの色を、HSBで定義しなおします。
+  
+  </div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setRGB()">setRGB</a>(obj:Object, r:uint, g:uint, b:uint):void</div>
+<div class="summaryTableDescription">[static]
+  Set Color.value with R,G,B.</div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="ColorUtil()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ColorUtil</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function ColorUtil()</code>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="getHLS()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getHLS</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getHLS(color:uint):Object</code><p>
+  24ビットの色を、h,l,sを格納したオブジェクトに変換します。
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> &mdash; color
+  </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code></td>
+</tr>
+</table>
+</div>
+<a name="getHSB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getHSB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getHSB(color:uint):Object</code><p>
+  24ビットの色を、h,s,bを格納したオブジェクトに変換します。
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> &mdash; color.
+  </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code></td>
+</tr>
+</table>
+</div>
+<a name="getRGB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getRGB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getRGB(rgb:uint):Object</code><p>
+  24ビットの色を、r,g,bを格納したオブジェクトに変換します。
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rgb</span>:uint</code> &mdash; color
+  </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; Object that contains {r:Red, g:Green, b:Blue}
+  </td>
+</tr>
+</table>
+</div>
+<a name="HLS2HSB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">HLS2HSB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function HLS2HSB(h:Number, l:Number, s:Number):Object</code><p>
+  Create {h,s,b} Object from H, L, S value.
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">h</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">l</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">s</span>:Number</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; {h:Hue, s:Saturation, b:Brightness}
+  </td>
+</tr>
+</table>
+</div>
+<a name="HLS2RGB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">HLS2RGB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function HLS2RGB(h:Number, l:Number, s:Number):Object</code><p>
+  H, L, Sの値から、{r,g,b}のオブジェクトを取得します。
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">h</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">l</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">s</span>:Number</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; {r:Red, g:Green, b:Blue}
+  </td>
+</tr>
+</table>
+</div>
+<a name="HSB2HLS()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">HSB2HLS</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function HSB2HLS(h:Number, s:Number, b:Number):Object</code><p>
+  Converts H, S, B values to {h:Hue, l:Luminous, s:Saturation} Object
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">h</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">s</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:Number</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; {h:Hue, l:Luminous, s:Saturation}
+  </td>
+</tr>
+</table>
+</div>
+<a name="HSB2RGB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">HSB2RGB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function HSB2RGB(hue:Number, sat:Number, bri:Number):Object</code><p>
+  convert H, S, B values to {r:red, g:green, b:blue} Object
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">hue</span>:Number</code> &mdash; 0-360
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sat</span>:Number</code> &mdash; 0-100
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bri</span>:Number</code> &mdash; 0-100
+  
+  </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; contains r(0-255), g(0-255), n(0-255)
+ </td>
+</tr>
+</table>
+</div>
+<a name="RGB2HLS()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">RGB2HLS</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function RGB2HLS(r:uint, g:uint, b:uint):Object</code><p>
+  convert R,G,B values to {h:Hue,l:Luminous,s:Saturation} Object
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">r</span>:uint</code> &mdash; Red value 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">g</span>:uint</code> &mdash; Green value 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:uint</code> &mdash; Blue value 0-255
+  
+  </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; contains {h:Hue,l:Luminous,s:Saturation}
+ </td>
+</tr>
+</table>
+</div>
+<a name="RGB2HSB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">RGB2HSB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function RGB2HSB(r:uint, g:uint, b:uint):Object</code><p>
+  convert R,G,B values to {h:huse,s:saturation,b:brightness} Object
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">r</span>:uint</code> &mdash; Red value 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">g</span>:uint</code> &mdash; Green value 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:uint</code> &mdash; Blue value 0-255
+  
+  </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; contains h(0-360), s(0-100), b(0-100)
+ </td>
+</tr>
+</table>
+</div>
+<a name="setHLS()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setHLS</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setHLS(col:Object, h:Number, l:Number, s:Number):void</code><p>
+  r,g,bを格納したオブジェクトの色を、HLSで定義しなおします。
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">col</span>:Object</code> &mdash; with property h, s, b
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">h</span>:Number</code> &mdash; 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">l</span>:Number</code> &mdash; 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">s</span>:Number</code> &mdash; 0-255
+  </td>
+</tr>
+</table>
+</div>
+<a name="setHSB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setHSB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setHSB(col:Object, h:Number, s:Number, b:Number):void</code><p>
+  r,g,bを格納したオブジェクトの色を、HSBで定義しなおします。
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">col</span>:Object</code> &mdash; with property h, s, b
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">h</span>:Number</code> &mdash; 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">s</span>:Number</code> &mdash; 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:Number</code> &mdash; 0-255
+  </td>
+</tr>
+</table>
+</div>
+<a name="setRGB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setRGB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setRGB(obj:Object, r:uint, g:uint, b:uint):void</code><p>
+  Set Color.value with R,G,B.
+  
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">obj</span>:Object</code> &mdash; with property r, g, b
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">r</span>:uint</code> &mdash; 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">g</span>:uint</code> &mdash; 0-255
+  </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:uint</code> &mdash; 0-255
+  </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
