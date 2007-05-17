@@ -27,7 +27,7 @@ package sketchbook.display{
 		public function blur(blurX:Number=4, blurY:Number=4, quality:uint=1):void
 		{
 			var bf:BlurFilter = new BlurFilter(blurX, blurY, quality);
-			_target.applyFilter(_target, _target.rect, new Point(0,0), filter);
+			_target.applyFilter(_target, _target.rect, new Point(0,0), bf);
 		}
 		
 		
@@ -80,7 +80,7 @@ package sketchbook.display{
 			var w:Number = Math.abs(x)
 			var tempBmd:BitmapData = new BitmapData( w, _target.height, _target.transparent, 0x000000 );
 			if(x<0){
-				tempBmd.copyPixels(_target, new Rectangle(0,0,w,_target.height)
+				tempBmd.copyPixels(_target, new Rectangle(0,0,w,_target.height),new Point(0,0));
 				_target.scroll(x,0)
 				_target.copyPixels( tempBmd, new Rectangle(0,0,tempBmd.width, tempBmd.height), new Point(_target.width-w,0));
 			}else{

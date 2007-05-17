@@ -22,6 +22,7 @@ package sketchbook.generators
 		{
 			trace("SawToothGenerator.updateValue is not tested yet")
 			var ratio:Number = _period / time
+			var val:Number
 			
 			if(ratio<0.5){
 				val = 2 * ratio

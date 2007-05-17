@@ -23,7 +23,7 @@ package sketchbook.generators
 			trace("TriangleGenerator.updateValue is not tested yet")
 			
 			var ratio:Number = _period / time
-			
+			var val:Number
 			if(ratio<0.25){
 				val = 4 * ratio
 			}else if(ratio<0.75){
