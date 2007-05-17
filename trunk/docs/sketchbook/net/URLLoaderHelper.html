@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="URLLoaderHelper,sketchbook.net.URLLoaderHelper,onComplete,onHttpStatus,onIOError,onOpen,onProgress,onSecurityError,METHOD_POST,METHOD_GET,DATA_FORMAT_BINARY,DATA_FORMAT_TEXT,DATA_FORMAT_VARIABLES,target,load,loadURL" name="keywords">
+<title>sketchbook.net.URLLoaderHelper</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'URLLoaderHelper - Sketchbook API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sketchbook</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sketchbook/net/URLLoaderHelper.html&amp;sketchbook/net/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;URLLoaderHelper</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class URLLoaderHelper"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sketchbook.net</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class URLLoaderHelper</td>
+</tr>
+</table>
+<p></p> 
+  URLLoaderを簡略化したクラスです。
+  <p>URLLoaderのイベントに対するコールバックハンドラや、URLRequestを介さず直接URLをコールするメソッドを提供します。</p> 
+  <p>TODO: Flashのundocumentな使用か、onCompleteというハンドラがうまく動かない</p>
+  <p></p>
+<br>
+<span class="label">Example</span>
+<br><div class='listing'><pre>
+  var loader:URLLoaderSB = new URLLoader()
+  loader.onComplete=function(data:Object):void
+  {
+    trace("loadCompleted")  
+  }
+  loader.loadURL("http://www.fladdict.net")</pre></div>
+  
+  <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">flash.net.URLLoader</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#onComplete">onComplete</a> : Function<div class="summaryTableDescription"> Event.COMPLETEのコールバックハンドラ。 引数としてdata:Objectが渡されます。 </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#onHttpStatus">onHttpStatus</a> : Function<div class="summaryTableDescription"> HTTPStatusEvent.HTTP_STATUSのコールバックハンドラ。引数としてstatusが渡されます。</div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#onIOError">onIOError</a> : Function<div class="summaryTableDescription"> IOErrorEvent.IOErrorのコールバックハンドラ。</div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#onOpen">onOpen</a> : Function<div class="summaryTableDescription"> Event.OPENのコールバックハンドラ。 </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#onProgress">onProgress</a> : Function<div class="summaryTableDescription"> ProgressEvent.PROGRESSのコールバックハンドラ。引数としてbytesLoaded, bytesTotalが渡されます。</div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#onSecurityError">onSecurityError</a> : Function<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#target">target</a> : URLLoader<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#URLLoaderHelper()">URLLoaderHelper</a>(urlLoader:URLLoader)</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#load()">load</a>(... rest):void</div>
+<div class="summaryTableDescription">
+   URLLoader.loadのショートカット
+   URLRequestだけでなく、StringでURLを指定してもリクエスト可能です。
+   </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#loadURL()">loadURL</a>(url:String, params:Object = null, method:String = "GET", headerParams:Object = null):void</div>
+<div class="summaryTableDescription">
+   URLRequestを介さずに、URLをダイレクトに指定するロード方法です。 
+      </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#DATA_FORMAT_BINARY">DATA_FORMAT_BINARY</a> : String = "binary"<div class="summaryTableDescription">[static] URLLoaderDataの定数へのショートカット </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#DATA_FORMAT_TEXT">DATA_FORMAT_TEXT</a> : String = "text"<div class="summaryTableDescription">[static] URLLoaderDataの定数へのショートカット </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#DATA_FORMAT_VARIABLES">DATA_FORMAT_VARIABLES</a> : String = "variables"<div class="summaryTableDescription">[static] URLLoaderDataの定数へのショートカット </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#METHOD_GET">METHOD_GET</a> : String = "GET"<div class="summaryTableDescription">[static] URLRequestMethodの定数へのショートカット </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#METHOD_POST">METHOD_POST</a> : String = "POST"<div class="summaryTableDescription">[static] URLRequestMethodの定数へのショートカット </div>
+</td><td class="summaryTableOwnerCol">URLLoaderHelper</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="onComplete"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onComplete</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var onComplete:Function</code><p> Event.COMPLETEのコールバックハンドラ。 引数としてdata:Objectが渡されます。 </p></div>
+<a name="onHttpStatus"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onHttpStatus</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var onHttpStatus:Function</code><p> HTTPStatusEvent.HTTP_STATUSのコールバックハンドラ。引数としてstatusが渡されます。</p></div>
+<a name="onIOError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onIOError</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var onIOError:Function</code><p> IOErrorEvent.IOErrorのコールバックハンドラ。</p></div>
+<a name="onOpen"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onOpen</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var onOpen:Function</code><p> Event.OPENのコールバックハンドラ。 </p></div>
+<a name="onProgress"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onProgress</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var onProgress:Function</code><p> ProgressEvent.PROGRESSのコールバックハンドラ。引数としてbytesLoaded, bytesTotalが渡されます。</p></div>
+<a name="onSecurityError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onSecurityError</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var onSecurityError:Function</code>
+</div>
+<a name="target"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">target</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>target:URLLoader</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get target():URLLoader</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set target(value:URLLoader):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="URLLoaderHelper()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">URLLoaderHelper</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function URLLoaderHelper(urlLoader:URLLoader)</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">urlLoader</span>:URLLoader</code></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="load()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">load</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function load(... rest):void</code><p>
+   URLLoader.loadのショートカット
+   URLRequestだけでなく、StringでURLを指定してもリクエスト可能です。
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code>... <span class="label">rest</span></code></td>
+</tr>
+</table>
+</div>
+<a name="loadURL()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadURL</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function loadURL(url:String, params:Object = null, method:String = "GET", headerParams:Object = null):void</code><p>
+   URLRequestを介さずに、URLをダイレクトに指定するロード方法です。 
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:String</code> &mdash; ロードするURL
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">params</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; サーバーに渡す引数を格納した無名オブジェクト
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">method</span>:String</code> (default = "<code>GET</code>")<code></code> &mdash; POST or GET
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">headerParams</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; ヘッダーとして送信する値を格納した無名オブジェクト
+   
+   </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><div class='listing'><pre>
+   var params:Object = {keyword:"test", sort:"asc"}
+      var loader:URLLoaderSB = new URLLoader()
+      loader.loadURL("http://www.fladdict.net",params,"POST")</pre></div>
+      
+   <p></p>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="DATA_FORMAT_BINARY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DATA_FORMAT_BINARY</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const DATA_FORMAT_BINARY:String = "binary"</code><p> URLLoaderDataの定数へのショートカット </p></div>
+<a name="DATA_FORMAT_TEXT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DATA_FORMAT_TEXT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const DATA_FORMAT_TEXT:String = "text"</code><p> URLLoaderDataの定数へのショートカット </p></div>
+<a name="DATA_FORMAT_VARIABLES"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DATA_FORMAT_VARIABLES</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const DATA_FORMAT_VARIABLES:String = "variables"</code><p> URLLoaderDataの定数へのショートカット </p></div>
+<a name="METHOD_GET"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">METHOD_GET</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const METHOD_GET:String = "GET"</code><p> URLRequestMethodの定数へのショートカット </p></div>
+<a name="METHOD_POST"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">METHOD_POST</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const METHOD_POST:String = "POST"</code><p> URLRequestMethodの定数へのショートカット </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
